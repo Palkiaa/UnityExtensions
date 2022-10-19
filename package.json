@@ -1,0 +1,11 @@
+{
+    "name": "com.spaghetti.unity-extensions",
+    "version": "1.0.0",
+    "displayName": "Unity Extensions",
+    "description": "Random collection of helpful Unity stuff",
+    "unity": "2020.3",
+    "author": {
+        "name": "Palkiaa",
+        "url": "https://github.com/Palkiaa"
+    }
+}
