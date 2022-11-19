@@ -19,5 +19,26 @@ namespace UnityEngine
             average /= vectors.Count();
             return average;
         }
+
+        /// <summary>
+        /// Rotates the vector.
+        /// </summary>
+        /// <returns>Returns the rotated vector.</returns>
+        /// <param name="vector">Original vector.</param>
+        /// <param name="offsetAngle">Angle to offset by in degrees.</param>
+        public static Vector3 RotateVector(this Vector3 vector, Vector3 offsetAngle)
+        {
+            return Quaternion.Euler(offsetAngle) * vector;
+        }
+
+        public static Vector3 Divide(this Vector3 a, Vector3 b)
+        {
+            return new Vector3(a.x / b.x, a.y / b.y, a.z / b.z);
+        }
+
+        public static Vector3 Multiply(this Vector3 a, Vector3 b)
+        {
+            return new Vector3(a.x * b.x, a.y * b.y, a.z * b.z);
+        }
     }
 }
